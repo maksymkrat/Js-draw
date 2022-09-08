@@ -1,0 +1,70 @@
+:root{}
+
+body{
+    margin:0px;
+    padding: 30px;
+    overflow: hidden;
+    background: black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    
+}
+
+ .tools .color-field{
+     height: 40px;
+     width: 40px;
+     min-height: 40px;
+     min-width: 40px;
+     cursor:  pointer;
+     display: inline-block;
+     cursor: pointer; 
+     box-sizing: border-box;
+     border-radius: 50%;
+     border: 2px solid white;
+     align-self: center;
+     margin: 0 10px;
+ }
+ .tools button {
+     align-self: center;
+     width: 60px;
+     height: 40px;
+     border: 2px solid white;
+     cursor: pointer;
+     background: black;
+     color: white; 
+     font-weight: bold;
+     margin: 0 10px;
+ }
+ .print_symbol{
+     text-align: center;
+     display: block;
+     width: 36px;
+     height: 18px;
+     border: 2px solid white;
+     cursor: pointer;
+     background: black;
+     color: white;
+     font-weight: bold;
+     margin: 0 10px;
+ }
+ 
+ .color-picker{
+     align-self: center;
+     margin: 0 10px;
+     height: 50px;
+     
+ }
+ 
+ .pen-range{
+     align-self: center;
+     margin: 0 10px;
+ }

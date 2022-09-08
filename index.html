@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Draw</title>
+<!--    <script src="jquery-3.6.0.min.js"></script>-->
+</head>
+<body>
+<div class="field ">
+    <div class="center">
+        <canvas id="canvas"></canvas>
+    </div>
+    
+        <div class="tools">
+            <button onclick="undo_last()" type="button" class="button">Undo</button>
+            <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+            
+            <div>
+                <div  class="print_symbol" onclick="print_mark(this)" type="button"  value="X">X</div>
+                <div class="print_symbol" onclick="print_mark(this)" type="button"  value="O">O</div>
+            </div>
+            <button class="button" onclick="on_arrow()">Arrow</button>
+            <button class="button" onclick="on_pen()" type="button" >Pen</button>
+                
+            
+            
+            <div onclick="change_color(this)" class="color-field" style="background: red"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: blue"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: green"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: yellow"></div>
+            
+            <input oninput="draw_color = this.value" type="color" class="color-picker">
+            <input oninput="draw_width = this.value" type="range" min="1" max="50"  class="pen-range" value="4">
+
+<!--            <button onclick="" type="button" class="button">Save</button>-->
+
+            <input type="file" onchange="selectFile(this)">
+            
+            
+            
+        </div>
+
+   
+    
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
